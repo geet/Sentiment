@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Twitter Sentiment Analysis</title>
+<script type="text/javascript">
+function init() {
+  // Automatically focus on input box
+  document.searchForm.query.focus();
+}	  
+</script>
+</head>
+<body onload="init()">
+  <div style="height:55px"></div>
+  <center>
+  <div>
+   
+      <img style="border: 0px;" src="logo.png" alt="Twitter Sentiment"/>
+   
+
+  </div>
+  <div style="height:36px"></div>
+  
+    <div style="font-size:14px; margin-bottom: 10px">Search by movie.</div>
+  <form name="searchForm" action="/search_tweets/" method="get">
+
+    <input name="query" value="" type="text" size="50"/>
+    <button>Search</button> 
+  </form>
+  
+
+</head>
+</html>
+

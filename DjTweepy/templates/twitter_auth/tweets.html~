@@ -1,0 +1,24 @@
+<html>
+<head>
+	The Searched Results
+</head>
+<body>
+<<<<<<< HEAD
+      <form method='post' action='/save_tweets/'>
+=======
+      <form method='post' action='/savetweets/'>
+>>>>>>> 89aa7e23b0b2789d0986b7c01aff694715d5590b
+	{% for tweet in tweets%}
+	<p>	
+		<b>
+		
+		     {{ tweet }}
+		     <br/><input type="radio" name="posneg:{{forloop.counter}}" value="pos" /> Positive<br />
+                     <input type="radio" name="posneg:{{forloop.counter}}" value="neg" /> Negative
+		</b>
+	</p>	
+	{% endfor %}
+	<input type='submit' value='Done'>
+	</form>
+</body>
+</html>

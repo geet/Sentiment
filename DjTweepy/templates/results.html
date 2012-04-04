@@ -1,0 +1,25 @@
+<html>
+<head>CLASSIFIED TWEETS<title>Results</title></head>
+<body>
+<style type="text/css">
+#tweet{
+border-style:double;
+padding:20px 20px;
+margin:5px 5 px;
+}
+</style>
+{% for tweet in tweets %}
+{% for pn in pos_neg %}
+{% ifequal forloop.counter forloop.parentloop.counter %}
+{% ifequal pn 'pos' %}
+<div id='tweet' style="background-color:yellow">
+{% else %}
+<div id='tweet' style="background-color:pink">
+{% endifequal %}
+{% endifequal %}
+{% endfor %}
+{{tweet}}
+</div>
+{% endfor %}
+</body>
+</html>
